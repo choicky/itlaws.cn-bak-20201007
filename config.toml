@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://itlaws.cn"
 title = "itLaws - IT & Laws"
 enableRobotsTXT = true
 enableEmoji = true
