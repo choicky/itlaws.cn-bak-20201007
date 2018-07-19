@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://itlaws.netlify.com/* http://itlaws.cn/:splat 301!
