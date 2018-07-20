@@ -1,10 +1,11 @@
 ---
-title: "Syntax Highlighting"
+title: "语法高亮"
+slug: syntax-highlighting
 date: 2011-08-30T16:01:23+08:00
 lastmod: 2017-08-30T16:01:23+08:00
 draft: false
-tags: ["preview", "Syntax Highlighting", "tag-5"]
-categories: ["Syntax Highlighting", "index"]
+tags: ["hugo", "Syntax Highlighting", "语法高亮"]
+categories: ["IT", "软件"]
 
 # You can also close(false) or open(true) something for this content.
 # P.S. comment can only be closed

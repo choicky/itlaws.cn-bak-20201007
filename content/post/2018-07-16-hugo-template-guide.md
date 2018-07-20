@@ -1,18 +1,16 @@
 +++
-title = "(Hu)go Template Primer"
+title = "Hugo 模版基础"
+slug = "hugo-template-guide"
 description = ""
 tags = [
     "go",
-    "golang",
-    "templates",
+    "模板",
     "themes",
-    "development",
 ]
 date = "2014-04-02"
 categories = [
-    "Development",
-    "golang",
-    "index",
+    "IT",
+    "软件",
 ]
 +++
 

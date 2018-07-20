@@ -1,10 +1,11 @@
 ---
-title: "Image Preview"
-date: 2018-03-03T16:01:23+08:00
-lastmod: 2018-03-04T16:01:23+08:00
+title: "图像预览"
+slug: "image-preview"
+date: 2018-07-17
+lastmod: 2018-07-17
 draft: false
-tags: ["preview", "image", "shortcodes", "tag-7"]
-categories: ["docs", "shortcodes", "index"]
+tags: ["hugo", "theme", "jane"]
+categories: ["IT", "软件"]
 
 menu:
   main:
@@ -12,13 +13,11 @@ menu:
     weight: 3
 ---
 
-Thanks for [liwenyip/hugo-easy-gallery](https://github.com/liwenyip/hugo-easy-gallery) & [Zebradil · Pull Request #48](https://github.com/xianmin/hugo-theme-jane/pull/48) .
+感谢 [liwenyip/hugo-easy-gallery](https://github.com/liwenyip/hugo-easy-gallery) & [Zebradil · Pull Request #48](https://github.com/xianmin/hugo-theme-jane/pull/48) ，我们现在可以在 hugo-theme-jane 中使用 `{{</* gallery */>}}` 简码。
 
-Now, we could use `{{</* gallery */>}}` shortcode in hugo-theme-jane.
+## 普通图像
 
-## Normal Image
-
-This is an image in `static/image` folder.
+这是存在 `static/image` 文件夹的图像。
 
 ```markdown
 ![This is an image in `static/image` folder.](/image/example.jpg)
@@ -26,34 +25,33 @@ This is an image in `static/image` folder.
 
 <!--more-->
 
-## `{{</* figure */>}}` shortcode
+## `{{</* figure */>}}` 简码
 
-### figure image with title
+### 具有 title 的图像
 
 ```
 {{</* figure src="/image/example.jpg" title="figure image with title" */>}}
 ```
 
-
-### figure image with caption
+### 具有 caption 的图像
 
 ```
 {{</* figure src="/image/example.jpg" caption="figure image with caption figure image with caption figure image with caption figure image with caption figure image with caption" */>}}
 ```
 
-### more `{{</* figure */>}}` shortcode usage
+### `{{</* figure */>}}` 简码的更多用法
 
-Specifying your image files:
+指定图像文件：
 
-- `{{</* figure src="thumb.jpg" link="image.jpg" */>}}` will use `thumb.jpg` for thumbnail and `image.jpg` for lightbox
-- `{{</* figure src="image.jpg" */>}}` or `{{</* figure link="image.jpg" */>}}` will use `image.jpg` for both thumbnail and lightbox
-- `{{</* figure link="image.jpg" thumb="-small" */>}}` will use `image-small.jpg` for thumbnail and `image.jpg` for lightbox
+- `{{</* figure src="thumb.jpg" link="image.jpg" */>}}` 将使用 `thumb.jpg` 作为小示意图以及使用  `image.jpg` 作为灯箱图。
+- `{{</* figure src="image.jpg" */>}}` or `{{</* figure link="image.jpg" */>}}` 将使用 `image.jpg` 作为小示意图和灯箱图。
+- `{{</* figure link="image.jpg" thumb="-small" */>}}` 将使用 `image-small.jpg` 作为小示意图以及使用 `image.jpg` 作为灯箱图。
 
-Optional parameters:
+可选参数：
 
-- All the [features/parameters](https://gohugo.io/extras/shortcodes) of Hugo's built-in `figure` shortcode work as normal, i.e. src, link, title, caption, class, attr (attribution), attrlink, alt
-- `size` (e.g. `size="1024x768"`) pre-defines the image size for PhotoSwipe. Use this option if you don't want to pre-load the linked image to determine its size.
-- `class` allows you to set any custom classes you want on the `<figure>` tag.
+- Hugo 内置的 `figure` 简码的 [特征/参数](https://gohugo.io/extras/shortcodes) 都正常使用，例如 src, link, title, caption, class, attr (attribution), attrlink, alt
+- `size` (e.g. `size="1024x768"`) 预定义图像的尺寸。
+- `class` 用来预定义 `<figure>` 的标签。
 
 Optional parameters for standalone `{{</* figure */>}}` shortcodes only (i.e. don't use on `{{</* figure */>}}` inside `{{</* gallery */>}}` - strange things may happen if you do):
 

@@ -1,17 +1,16 @@
 +++
-title = "Getting Started with Hugo"
+title = "Hugo入门教程"
+slug = "getting-started-with-hugo"
 description = ""
 tags = [
     "go",
-    "golang",
     "hugo",
-    "development",
 ]
-date = "2014-04-02"
+date = "2018-07-16"
+lastMod = 2018-07-16
 categories = [
-    "Development",
-    "golang",
-    "index",
+    "IT",
+    "软件",
 ]
 +++
 
