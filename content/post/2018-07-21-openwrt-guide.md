@@ -42,7 +42,7 @@ WinPE 启动电脑之后， `phpsdiskwrite -u openwrt*uefi-gpt-squashfs.img` 就
 
 到菜单`系统`=>`进阶设置`=>`模式切换`里面，切换到`正常模式`，就能快速地使3215U主机设置为一台路由器。此时，Wan6 消失了，就剩 Lan 和 Wan 了。
 
-Wan 中，选择 pppoe ，填入拨号的用户名和密码，正常情况下，就能联网了。3215U主机的4个网口，默认Lan1 是Wan，Lan2至Lan4才是Lan，所以，这时候要把电脑连接到3215U主机的 Lan2~Lan4的其中一个接口才能连接到3215U主机了。
+Wan 中，选择 PPPOE，填入拨号的用户名和密码，正常情况下，就能联网了。3215U主机的4个网口，默认Lan1 是Wan，Lan2至Lan4才是Lan，所以，这时候要把电脑连接到3215U主机的 Lan2~Lan4的其中一个接口才能连接到3215U主机了。
 
 ## 把剩余的硬盘用起来
 
@@ -78,9 +78,9 @@ config 'mount'
 
 运行 `mount -a` 就能把这个分区挂到系统了。
 
-## 设置 swapfile 文件作为交换分区
+## 设置 swapfile 文件作为虚拟内存
 
-后来折腾的过程中，发现有时候2G内存不够用，所以我新建了一个 swapfile 文件作为交换分区。
+后来折腾的过程中，发现有时候2G内存不够用，所以我新建了一个 swapfile 文件作为虚拟内存（交换分区）。
 
 ```bash
  dd if=/dev/zero of=/mnt/data1/swapfile bs=1k count=2048k
@@ -124,7 +124,7 @@ src/gz openwrt_koolshare_mod_telephony http://openwrt.proxy.ustclug.org/snapshot
 
 aira2 是一个下载工具。可用于下载 http/https/ftp/bt/磁力链接等。
 
-测试时，我发现BT和磁力死活下载不了，折腾了很久。后来发现，不是 aira2 下载不了BT/磁力，而是我选择的种子太冷门，根本没有源。拜拜浪费我的时间啊。
+测试时，我发现BT和磁力死活下载不了，折腾了很久。后来发现，不是 aira2 下载不了BT/磁力，而是我选择的种子太冷门，根本没有源。白白浪费我的时间啊。
 
 ## v2ray
 
@@ -148,7 +148,7 @@ v2ray 的坑主要是，填写的配置文件只需要`outbound`的部分，外�
 
 ### 卸载软件
 
-曾经有一段时间，发现有些软件点击卸载之后，仍然处于“已安装”的状态。后来才知道，需要先把`启动`的勾去掉，也就是先禁止软件运行，否则就无法卸载。
+曾经有一段时间，发现有些软件点击卸载之后，仍然处于`已安装`的状态。后来才知道，需要先把`启动`的勾去掉，也就是先禁止软件运行，否则就无法卸载。
 
 ### 网络共享
 
@@ -156,12 +156,12 @@ v2ray 的坑主要是，填写的配置文件只需要`outbound`的部分，外�
 
 网络共享是通过`samba`这个协议/程序实现的。比较坑的地方是，openwrt 默认只有`root`用户，而`samba`默认不支持 `root`，所以需要先ssh 到3215U主机，`adduer aaa`来新建一个名为`aaa`的用户。
 
-另一个坑就是，刚才`adduser`新建aaa用户时设定的密码还不是`samba`的密码。需要``smbpasswd -a aaa `来设定用户aaa的密码，即，网络共享时需要输入 `smbpasswd`设置的密码。
+另一个坑就是，刚才`adduser`新建aaa用户时设定的密码还不是`samba`的密码。需要`smbpasswd -a aaa`来设定用户aaa的密码，即，网络共享时需要输入 `smbpasswd`设置的密码。
 
 在网页界面中，`服务`=>`网络共享`中设置共享的文件夹就行。我把`/mnt/data1/download`共享了。有时候会发现访问这个共享文件夹时，没有写入或者删除的权限，运行如下命令即可：
 
 ```bash
-chown -R a:root /mnt/data1/download/
+chown -R aaa:root /mnt/data1/download/
 ```
 
 ## 计划任务/crontab
@@ -177,7 +177,7 @@ Linux 系统经常使用 `crontab -e`来设定各种计划任务，这种计划�
 网页端，`系统`=>`计划任务`中，写入：
 
 ```bash
-*/5 * * * * chown -R a:root /mnt/data1/download/
+*/5 * * * * chown -R aaa:root /mnt/data1/download/
 ```
 
 这句话的意思时，每5分钟，就把 download 文件夹里面的所有文件划归到用户aaa，这样，网络共享中，aaa就有权限修改、删除了。
