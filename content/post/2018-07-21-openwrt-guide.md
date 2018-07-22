@@ -32,13 +32,19 @@ WinPE 推荐[微PE工具箱](http://www.wepe.com.cn/)的版本。phpsdiskwrite �
 
 WinPE 启动电脑之后， `phpsdiskwrite -u openwrt*uefi-gpt-squashfs.img` 就刷完了。
 
-## 初步设置与拨号上网
+## 访问路由器的方式
 
 3215U主机配了4个千兆网卡，机箱写着 Lan1、Lan2、Lan3和Lan4。
 
-用电脑通过网线接到3215U主机的Lan1，浏览器访问 192.168.1.1，正常情况下，输入用户名和密码就能登陆了。原始用户名`root`密码`koolshare`。
+3215U主机的默认IP为`192.168.1.1`。用电脑通过网线接到3215U主机的某个Lan（推荐Lan2~4），浏览器访问 192.168.1.1，正常情况下，输入用户名和密码就能登陆了。原始用户名`root`密码`koolshare`。
 
-登陆之后的系统首页显示了3215U主机的概况，目前没啥看头，也当不了路由器，默认情况下，网络接口显示了 Lan，Wan 和 Wan 6。其中，Lan 为路由器下方接口用于连接局域网的设备，Wan 为路由器的上方接口用于连接外部，Wan 6 为 ipv6 的Wan。
+web访问，在我这里有个坑：chrome正常模式登录不了，隐私模式可以登录。换用火狐则一切顺利。
+
+此外，有些时候。还是需要 ssh 到3215U主机，推荐使用 xshell 或者 putty。原始用户名`root`密码`koolshare`。
+
+## 初步设置与拨号上网
+
+Web登录之后的系统首页显示了3215U主机的概况，目前没啥看头，也当不了路由器，默认情况下，网络接口显示了 Lan，Wan 和 Wan 6。其中，Lan 为路由器下方接口用于连接局域网的设备，Wan 为路由器的上方接口用于连接外部，Wan 6 为 ipv6 的Wan。
 
 到菜单`系统`=>`进阶设置`=>`模式切换`里面，切换到`正常模式`，就能快速地使3215U主机设置为一台路由器。此时，Wan6 消失了，就剩 Lan 和 Wan 了。
 
@@ -125,6 +131,8 @@ src/gz openwrt_koolshare_mod_telephony http://openwrt.proxy.ustclug.org/snapshot
 aira2 是一个下载工具。可用于下载 http/https/ftp/bt/磁力链接等。
 
 测试时，我发现BT和磁力死活下载不了，折腾了很久。后来发现，不是 aira2 下载不了BT/磁力，而是我选择的种子太冷门，根本没有源。白白浪费我的时间啊。
+
+据说 aria2 的BT下载速度与 tracker 有关系，建议多添加 tracker 。http://www.tkser.tk/ 有推荐aria2-BT服务器地址。建议把`trackers_all_http `以及`trackers_best `的内容都增加进去。
 
 ## v2ray
 
