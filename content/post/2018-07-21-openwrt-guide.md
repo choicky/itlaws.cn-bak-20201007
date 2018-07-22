@@ -1,6 +1,6 @@
 ---
 date: 2018-07-21
-lastmod: 2018-07-21
+lastmod: 2018-07-22
 title: "openwrt/LEDE 教程"
 slug: "openwrt-guide"
 autoCollapseToc: true
