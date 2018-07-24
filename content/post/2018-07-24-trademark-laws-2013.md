@@ -1,5 +1,5 @@
 ---
-title: "专利法(2013年修改)"
+title: "商标法(2013年修改)"
 date: 2018-07-24
 lastmod: 2018-07-24
 slug: trademark-law-2017
