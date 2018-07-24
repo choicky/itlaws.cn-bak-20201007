@@ -19,7 +19,10 @@ sudo cp -v hugo /usr/local/bin/
 hugo new site itlaws.cn
 ```
 
+该命令会再当前目录生成`itlaws.cn`，里面有hugo生成的基础文件。hugo 比较坑的地方在于，这批基础文件没有 theme ，并且，没有 theme 就不会显示任何内容。
+
 ### 将创建的 hugo 网站初始化为 git repository
+
 ```bash
 cd itlaws.cn
 git init
@@ -33,7 +36,7 @@ git init
 ### 下载 jane 主题
 建议先把 [jane](https://github.com/xianmin/hugo-theme-jane) 主题fork一份到自己的github下面，例如 https://github.com/choicky/hugo-theme-jane，方便在官方文件的基础上做些小调整。
 
-因为 `itlaws.cn` 已经是一个 `git repository` ，里面再有一个主题的 `git repository` 不太好。所以使用 `git submodule`，将主题文件作为一个子模块（submodule）。
+因为 `itlaws.cn` 已经是一个 `git repository` ，里面再有一个主题的 `git repository` 不太好。所以使用 `git submodule`，将主题文件作为一个子模块（submodule），并以更新子模块的方式下载 jane 主题。
 
 ```bash
  git submodule add git@github.com:choicky/hugo-theme-jane.git themes/jane
@@ -41,9 +44,16 @@ git init
 ```
 复制 jane 主题自带的示范性内容到 hugo 网站的根目录：
 ```bash
-cp -av themes/jane/exampleSite/* .
+cp -r themes/jane/exampleSite/content ./
 ```
-本地测试：
+复制jane的默认设置：
+
+```bash
+cp themes/jane/exampleSite/config.toml ./
+```
+
+ 本地测试：
+
 ```
 hugo server
 ```
