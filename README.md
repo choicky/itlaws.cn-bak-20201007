@@ -4,7 +4,7 @@ A website based on [hugo](https://gohugo.io/) plus [jane](https://github.com/xia
 这是基于 [hugo](https://gohugo.io/) 及其   [jane](https://github.com/xianmin/hugo-theme-jane) 主题构建的网站的源代码。Demo 见 [itlaws.cn](https://itlaws.cn)。
 
 ### 安装 hugo
-去 hugo 的 [releases](https://github.com/gohugoio/hugo/releases) 下载 hugo [v0.44](https://github.com/gohugoio/hugo/releases/tag/v0.44)的版本。目前使用的主题尚未适配v0.45。
+去 hugo 的 [releases](https://github.com/gohugoio/hugo/releases) 下载 hugo ，如 theme 支持，就尽量下载最新的。
 
 如果是 Linux ，将解压缩后的 `hugo` 放到 `/usr/local/bin/` 目录下：
 ```
@@ -39,7 +39,7 @@ git init
 因为 `itlaws.cn` 已经是一个 `git repository` ，里面再有一个主题的 `git repository` 不太好。所以使用 `git submodule`，将主题文件作为一个子模块（submodule），并以更新子模块的方式下载 jane 主题。
 
 ```bash
- git submodule add git@github.com:choicky/hugo-theme-jane.git themes/jane
+git submodule add git@github.com:choicky/hugo-theme-jane.git themes/jane
  git submodule update --init --recursive
 ```
 复制 jane 主题自带的示范性内容到 hugo 网站的根目录：
