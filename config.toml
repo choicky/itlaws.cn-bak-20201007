@@ -128,9 +128,9 @@ defaultContentLanguage = "en"           # Default language to use
 
 
   [params.reward]                                         # 文章打赏
-    enable = false
-    wechat = "/path/to/your/wechat-qr-code.png"           # 微信二维码
-    alipay = "/path/to/your/alipay-qr-code.png"           # 支付宝二维码
+    enable = true
+    wechat = "/img/wechat-reward.jpg"           # 微信二维码
+    alipay = "/img/alipay-reward.jpg"           # 支付宝二维码
 
   [params.social]                                         # 社交链接
 #    a-email = "mailto:zhoucaiqi@email.com"
