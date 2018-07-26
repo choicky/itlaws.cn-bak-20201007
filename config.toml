@@ -20,8 +20,8 @@ PygmentsOptions = "linenos=table"
 
 # language support # en / zh-cn / other... translations present in i18n/
 defaultContentLanguage = "zh-cn"           # Default language to use
-[languages.en]
-  languageCode = "en"
+[languages.zh-cn]
+  languageCode = "zh-cn"
 
 [author]                  # essential                     # 必需
   name = "zhoucaiqi@gmail.com"
