@@ -1,8 +1,8 @@
 ---
 title: "通过github和caddy实现hugo的自动部署"
 slug: "Hugo-Caddy-Autodeplay"
-date: 2018-07-27T09:25:30+08:00
-lastmod: 2018-07-27T09:25:30+08:00
+date: 2018-07-28T09:25:30+08:00
+lastmod: 2018-07-28T09:25:30+08:00
 tags: [
     "hugo",
     "caddy",
