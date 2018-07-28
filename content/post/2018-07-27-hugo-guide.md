@@ -67,7 +67,7 @@ git init
 后续步骤运行命令时，都在`itlaws.cn`目录下运行。
 
 ### 下载 jane 主题
-建议先把 [jane](https://github.com/xianmin/hugo-theme-jane) 主题fork一份到自己的github下面，例如 https://github.com/choicky/hugo-theme-jane，方便在官方文件的基础上做些小调整。
+建议先把 [jane](https://github.com/xianmin/hugo-theme-jane) 主题fork一份到自己的github下面，例如 https://github.com/choicky/hugo-theme-jane ，方便在官方文件的基础上做些小调整。
 
 因为 `itlaws.cn` 已经是一个 `git repository` ，里面再有一个主题的 `git repository` 不太好。所以使用 `git submodule`，将主题文件作为一个子模块（submodule），并以更新子模块的方式下载 jane 主题。
 
