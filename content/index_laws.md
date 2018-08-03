@@ -22,8 +22,12 @@ mathjax: false
 
 [商标法实施条例（2014年修改）](/post/trademark-law-implementation-regulations-2014/) 
 
+### 刑法相关
+
+[刑法法(2017年修改)](/post/criminal-law-2017/)
+
 ### 专利法相关
 
-[专利法(2008年修改)](/post/patent-law-2017/) 
+[专利法(2008年修改)](/post/patent-law-2008/) 
 
 [专利法实施细则（2010年修改）](/post/patent-law-implementation-rules-2010/) 
