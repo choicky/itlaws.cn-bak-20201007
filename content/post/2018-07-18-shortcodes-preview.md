@@ -6,11 +6,6 @@ lastmod: 2018-07-18
 draft: false
 tags: ["hugo", "shortcodes", "Jane"]
 categories: ["IT", "软件",]
-
-menu:
-  main:
-    parent: "docs"
-    weight: 2
 ---
 
 

@@ -5,12 +5,6 @@ date: 2018-07-19
 lastmod: 2018-07-20
 tags: ["hugo", "theme", "Jane"]
 categories: ["IT", "软件"]
-
-menu:
-  main:
-    parent: "docs"
-    weight: 1
-    
 mathjax: true
 ---
 

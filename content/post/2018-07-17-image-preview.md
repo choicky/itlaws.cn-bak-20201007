@@ -6,11 +6,6 @@ lastmod: 2018-07-17
 draft: false
 tags: ["hugo", "theme", "jane"]
 categories: ["IT", "软件"]
-
-menu:
-  main:
-    parent: "docs"
-    weight: 3
 ---
 
 感谢 [liwenyip/hugo-easy-gallery](https://github.com/liwenyip/hugo-easy-gallery) & [Zebradil · Pull Request #48](https://github.com/xianmin/hugo-theme-jane/pull/48) ，我们现在可以在 hugo-theme-jane 中使用 `{{</* gallery */>}}` 简码。
