@@ -95,8 +95,8 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   changyanAppid = ""        # Changyan app id             # 畅言
   changyanAppkey = ""       # Changyan app key
   tencent_analytics = ""    # Tencent Analytics
-  baidu_push = false        # baidu push                  # 百度
-  baidu_analytics = ""      # Baidu Analytics
+  baidu_push = true        # baidu push                  # 百度
+  baidu_analytics = "3810cda5a4d6eec6d00cedd4521a7fb1"      # Baidu Analytics
   baidu_verification = ""   # Baidu Verification
   google_verification = ""  # Google_Verification         # 谷歌
 
