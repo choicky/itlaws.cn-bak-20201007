@@ -8,7 +8,6 @@ tags: ["hugo", "shortcodes", "Jane"]
 categories: ["IT", "软件",]
 ---
 
-
 ## 简码是什么
 
 Markdown 很精简，以至于用户有时候需要使用原生 HTML 标签实现某些内容，例如视频的 `<iframes>`。

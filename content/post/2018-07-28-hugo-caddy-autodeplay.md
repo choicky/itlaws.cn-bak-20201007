@@ -16,7 +16,6 @@ categories: [
 # mathjax: false
 ---
 
-
 [使用hugo搭建博客网站](/post/hugo-guide) 记录了如何使用hugo搭建静态化网站。
 
 ## 通过 webhook 机制实现 hugo 源文件更新后的自动部署
@@ -25,7 +24,9 @@ categories: [
 
 稍geek一点的方式，就是在任何一个地方修改Markdown格式的网站源文件，然后通过`git push`把本地的文件推送到代码托管平台例如 [github](https://github.com) ，然后在服务器上通过`git pull`把文件拉下来，然后重新`hugo`。
 
-更懒人的方式，应该是把`git push`之后的步骤自动化。<!--more-->
+更懒人的方式，应该是把`git push`之后的步骤自动化。
+
+<!--more-->
 
 [codezh](https://github.com/coderzh) 之前写了一篇博文 [通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages](https://blog.coderzh.com/2015/09/13/use-webhook-automated-deploy-hugo/) ， 这方案的原理是：github 收到新的文件之后，通过 webhook 机制通知服务器；服务器收到webkook通知之后，执行 `git pull` 和 `hugo` 命令。
 
