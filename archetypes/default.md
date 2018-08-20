@@ -10,7 +10,7 @@ tags: [
 ]
 categories: [
     "IT",
-    "中文",
+    "软件",
     "Laws",
     "法律全文",
 ]
