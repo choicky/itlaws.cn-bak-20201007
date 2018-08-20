@@ -1,6 +1,6 @@
 ---
-title: "2018 08 20 Aria2 Bt Magnet"
-slug: "2018-08-20-Aria2-Bt-Magnet"
+title: "解决 Aria2 无法下载 Bt 和磁力链接的问题"
+slug: "Aria2-Bt-Magnet"
 date:    2018-08-20T22:11:25+08:00
 lastmod: 2018-08-20T22:11:25+08:00
 tags: [
