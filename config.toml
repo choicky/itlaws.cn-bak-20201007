@@ -126,11 +126,18 @@ defaultContentLanguage = "zh-cn"           # Default language to use
     clientId = ""           # Your client ID
     clientSecret = ""       # Your client secret
 
-
   [params.reward]                                         # 文章打赏
     enable = true
     wechat = "/img/wechat-reward.jpg"           # 微信二维码
     alipay = "/img/alipay-reward.jpg"           # 支付宝二维码
+
+  [params.counter.busuanzi]  # a Chinese visitor counter  # 不蒜子计数器
+    enable = false
+
+  [params.counter.leancloud]  # Chinese leancloud visitor counter  # leancloud 计数器
+    enable = false
+    appId = ""
+    appKey = ""
 
   [params.social]                                         # 社交链接
 #    a-email = "mailto:zhoucaiqi@email.com"
