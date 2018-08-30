@@ -1,8 +1,8 @@
 ---
 title: "kvm 架构的 vps 优化"
 slug: "Kvm-Vps-Optimize"
-date:    2018-08-30T17:29:41+08:00
-lastmod: 2018-08-30T17:29:41+08:00
+date:    2018-08-29T17:29:41+08:00
+lastmod: 2018-08-29T17:29:41+08:00
 tags: [
     "kvm",
     "vps",
