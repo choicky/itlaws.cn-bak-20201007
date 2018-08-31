@@ -19,7 +19,7 @@ categories: [
 ---
 vps （虚拟的私人服务器）的网络性能与其优化程度有关。经过优化的 vps ，网速可能会提高几倍。
 
-根据不同的虚拟技术，vps 包括 ovz 、kvm 等多个架构。本篇记录一下 kvm 架构的 vps 使用的优化方案。
+根据不同的虚拟技术，vps 包括 ovz 、kvm 等多个架构。本篇记录一下 kvm 架构下安装 ubuntu 系统的 vps 使用的优化方案。
 
 
 
@@ -30,7 +30,7 @@ bbr 是 Google 研发的一种网络传输算法。
 秋水逸冰写了一个[开启 bbr 的脚本](https://teddysun.com/489.html)，使用方法如下：<!--more-->
 
 ```bash
-wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && sudo ./bbr.sh
+wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && sudo bash bbr.sh
 ```
 
 
@@ -96,7 +96,7 @@ net.ipv4.ip_forward = 1
 net.ipv4.tcp_fastopen = 3
 ```
 
-## TCP 优化
+## 文件句柄数量优化
 
 通过 `sudo nano /etc/security/limits.conf` 加入如下内容：
 
@@ -105,12 +105,7 @@ net.ipv4.tcp_fastopen = 3
 * hard  nofile  1024000
 ```
 
-通过 `sudo nano /etc/profile` 加入如下内容：
-
-```bash
-ulimit -SHn 1024000
-```
-
+其中， hard 是系统总得打开的文件句柄数量，系统的默认值是内存大小（以K计算）的10%，该比例可上调。 soft 是某个进程打开的文件句柄数量。
 
 
 运行 ``sysctl -p` ` 或者重启系统使其生效。
