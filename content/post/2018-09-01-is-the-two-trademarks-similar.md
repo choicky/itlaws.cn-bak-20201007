@@ -1,5 +1,5 @@
 ---
-title: "“爱益”和“爱益宝”是否近似"
+title: "“爱益”和“爱益宝”既近似，又不近似？"
 slug: "Is-the-Two-Trademarks-Similar"
 date:    2018-09-01T13:50:40+08:00
 lastmod: 2018-09-01T13:50:40+08:00
