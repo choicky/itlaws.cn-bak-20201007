@@ -1,7 +1,7 @@
 ---
 title: "法律索引"
 date: 2018-07-20
-lastmod: 2018-07-20
+lastmod: 2018-09-04
 menu: "main"
 weight: 50
 
@@ -22,9 +22,17 @@ mathjax: false
 
 [商标法实施条例（2014年修改）](/post/trademark-law-implementation-regulations-2014/) 
 
+### 劳动合同法相关
+
+[劳动合同法（2012年修改）](/post/labor-contract-law-2012/)
+
+### 民法相关
+
+[民事诉讼法（2017年修正） ](/post/civil-procedure-law-2017/)
+
 ### 刑法相关
 
-[刑法法(2017年修改)](/post/criminal-law-2017/)
+[刑法(2017年修改)](/post/criminal-law-2017/)
 
 ### 专利法相关
 

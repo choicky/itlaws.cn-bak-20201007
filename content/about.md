@@ -1,8 +1,8 @@
 ---
-title: "关于我"
-slug: "About-Me"
+title: "关于"
+slug: "About"
 date:    2018-08-03T20:16:19+08:00
-lastmod: 2018-08-03T20:16:19+08:00
+lastmod: 2018-09-03T20:16:19+08:00
 tags: [
     "关于",
     "简介",
@@ -14,10 +14,9 @@ categories: [
     "法律全文",
 ]
 
-menu:
-  main:
-    parent: "关于"
-    weight: 1
+menu: "main"
+weight: 60
+
 ---
 
 ## 基本信息
