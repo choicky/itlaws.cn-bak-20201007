@@ -1,5 +1,5 @@
 ---
-title: "友情链接"
+title: "Links"
 slug: "Links"
 date:    2018-09-07T21:19:28+08:00
 lastmod: 2018-09-07T21:19:28+08:00

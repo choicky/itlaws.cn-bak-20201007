@@ -32,22 +32,32 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   filename = "sitemap.xml"
 
 [[menu.main]]             # config your menu              # 配置目录
-  name = "首页"
+  name = "Home"
   weight = 10
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "归档"
+  name = "IT"
+  weight = 12
+  identifier = "it"
+  url = "/categories/it/"
+[[menu.main]]
+  name = "Laws"
+  weight = 14
+  identifier = "laws"
+  url = "/categories/laws/"
+[[menu.main]]
+  name = "Archives"
   weight = 20
   identifier = "archives"
   url = "/post/"
 [[menu.main]]
-  name = "标签"
+  name = "Tags"
   weight = 30
   identifier = "tags"
   url = "/tags/"
 [[menu.main]]
-  name = "类别"
+  name = "Categories"
   weight = 40
   identifier = "categories"
   url = "/categories/"
@@ -69,7 +79,7 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   description = "熟悉 IT 、互联网的律师"
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
-  archive-paginate = 3
+  archive-paginate = 1000
 
   # paginate style, default use numbered pagination links
   # if true, use original "Previous" and "Next" links.
@@ -140,13 +150,13 @@ defaultContentLanguage = "zh-cn"           # Default language to use
     appKey = ""
 
   [params.social]                                         # 社交链接
-#    a-email = "mailto:zhoucaiqi@email.com"
+    a-email = "mailto:zhoucaiqi@email.com"
 #    b-stack-overflow = "http://localhost:1313"
-#    c-twitter = "http://localhost:1313"
+    c-twitter = "https://twitter.com/choicky/"
 #    d-facebook = "http://localhost:1313"
 #    e-linkedin = "http://localhost:1313"
 #    f-google = "http://localhost:1313"
-#    g-github = "http://localhost:1313"
+    g-github = "https://github.com/choicky"
 #    h-weibo = "http://localhost:1313"
 #    i-zhihu = "http://localhost:1313"
 #    j-douban = "http://localhost:1313"

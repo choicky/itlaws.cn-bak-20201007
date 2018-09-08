@@ -1,5 +1,5 @@
 ---
-title: "关于"
+title: "About"
 slug: "About"
 date:    2018-08-03T20:16:19+08:00
 lastmod: 2018-09-08T11:02:19+08:00
