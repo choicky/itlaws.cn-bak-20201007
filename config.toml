@@ -74,9 +74,9 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   rssFullContent = true     # if false, Rss feed instead of the summary
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "itLaws"        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["IT", "Laws","信息技术","法律","法务"]
-  description = "熟悉 IT 、互联网的律师"
+  logoTitle = "IT & Laws"        # default: the title value    # 默认值: 上面设置的title值
+  keywords = ["IT", "Laws", "互联网", "信息技术", "法律", "法务"]
+  description = "IT & Laws, 熟悉IT、互联网的民商刑律师"
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
   archive-paginate = 1000
@@ -124,6 +124,10 @@ defaultContentLanguage = "zh-cn"           # Default language to use
     slideout = '<script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>'
     gitmentJS = '<script src="https://cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js" crossorigin="anonymous"></script>'
     gitmentCSS = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css" crossorigin="anonymous">'
+    photoswipe = '<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.2/dist/photoswipe.min.js" integrity="sha256-iG1tiE5xJSJQhKdeOW4cPiSy+RTrnRKjjjrVQ0hexug=" crossorigin="anonymous"></script>'
+    photoswipe-ui = '<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.2/dist/photoswipe-ui-default.min.js" integrity="sha256-XvSk6Opq7XZ8oUcx213MtikXtbl5bbe4Q9tr4+NJBCg=" crossorigin="anonymous"></script>'
+    photoswipeCSS = '<link src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.2/dist/photoswipe.min.css" integrity="undefined" crossorigin="anonymous">'
+    photoswipeSKIN = '<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.2/dist/default-skin/default-skin.css" integrity="sha256-c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8=" crossorigin="anonymous">'
 
   [params.utteranc]         # utteranc is a comment system based on GitHub issues. see https://utteranc.es
     enable = true
