@@ -1,5 +1,5 @@
 baseURL = "https://itlaws.cn"
-title = "IT & Laws, 熟悉IT、互联网的民商刑律师"
+title = "IT & Laws, 科技金融律师"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
@@ -10,6 +10,7 @@ rssLimit = 20             # Limit Entry Count to Rss file # 限制 Rss 文章输
 disqusShortname = ""      # disqus_shortname
 googleAnalytics = "UA-123664327-1"      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的author.name ↓
+enableGitInfo = true      # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 # uglyURLs = true         # more info: https://gohugo.io/content-management/urls/#ugly-urls
 
 # Highlight options.
@@ -79,11 +80,12 @@ defaultContentLanguage = "zh-cn"           # Default language to use
   since = "2019"            # Site creation time          # 站点建立时间
   homeFullContent = false   # if false, show post summaries on home page. Othewise show full content.
   rssFullContent = true     # if false, Rss feed instead of the summary
+  mainSections = ["post"]
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "it & Laws"        # default: the title value    # 默认值: 上面设置的title值
-  keywords = ["IT", "Laws", "互联网", "信息技术", "法律", "法务"]
-  description = "IT & Laws, 熟悉IT、互联网的民商刑律师"
+  keywords = ["IT", "Laws", "互联网", "金融", "科技", "知识产权"]
+  description = "IT & Laws, 科技金融律师"
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
   archive-paginate = 1000
@@ -170,6 +172,12 @@ defaultContentLanguage = "zh-cn"           # Default language to use
 
   [params.commentCount.disqus] # show counts of comments for Disqus
     enable = false
+
+  # use public git repo url to link lastmod git commit, enableGitInfo should be true.
+  # 指定 git 仓库地址，可以生成指向最近更新的 git commit 的链接，需要将 enableGitInfo 设置成 true.
+  [params.gitInfo]
+    gitRepo = "https://github.com/xianmin/hugo-theme-jane"
+    showCommitMessage = true
 
   [params.social]                                         # 社交链接
     a-email = "mailto:zhoucaiqi@email.com"
