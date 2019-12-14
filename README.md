@@ -80,9 +80,7 @@ git push -u -f origin master
 ### 服务器下载 hugo 网站
 
 ```bash
-git clone git@github.com:choicky/itlaws.cn.git ./itlaws.cn
-cd ./itlaws.cn
-git submodule update --init --recursive
+git clone --recurse-submodules git@github.com:choicky/itlaws.cn.git ./itlaws.cn
 hugo
 ```
 `itlaws.cn/public`才是对外的网站根目录。
