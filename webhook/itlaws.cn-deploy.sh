@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# 配合 npm i -S github-webhook-handler 使用
+
 # 网站的代码仓库目录
 input="/var/www/itlaws.cn"
 
