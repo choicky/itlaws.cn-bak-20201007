@@ -83,4 +83,4 @@ git push -u -f origin master
 git clone --recurse-submodules git@github.com:choicky/itlaws.cn.git ./itlaws.cn
 hugo
 ```
-`itlaws.cn/public`才是对外的网站根目录。
+`itlaws.cn/public` 才是对外的网站根目录。
