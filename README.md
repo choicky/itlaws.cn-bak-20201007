@@ -31,7 +31,7 @@ git init
 
 参考 github 的 [gitattributes](https://github.com/alexkaratarakis/gitattributes) 范例，在 `itlaws.cn` 创建 `.gitattributes` 文件，详细内容见[这里](https://github.com/choicky/itlaws.cn/blob/master/.gitattributes)。
 
-后续步骤运行命令时，都在`itlaws.cn`目录下运行。
+后续步骤运行命令时，都在 `itlaws.cn` 目录下运行。
 
 ### 下载 jane 主题
 建议先把 [jane](https://github.com/xianmin/hugo-theme-jane) 主题fork一份到自己的github下面，例如 https://github.com/choicky/hugo-theme-jane，方便在官方文件的基础上做些小调整。
