@@ -19,4 +19,4 @@ git checkout master
 chown -R $USER:$USERGROUP $repo_path
 hugo -d $web_root
 
-
+# for test
