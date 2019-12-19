@@ -1,7 +1,5 @@
-# just for test autodeploy 222
-
 baseURL = "https://itlaws.cn"
-title = "IT & Laws, 科技金融律师2344"
+title = "2347IT & Laws, 科技金融律师"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
