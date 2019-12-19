@@ -1,3 +1,5 @@
+# just for test autodeploy
+
 baseURL = "https://itlaws.cn"
 title = "IT & Laws, 科技金融律师"
 enableRobotsTXT = true
