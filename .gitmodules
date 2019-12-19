@@ -1,3 +1,6 @@
 [submodule "themes/jane"]
 	path = themes/jane
 	url = git@github.com:choicky/hugo-theme-jane.git
+[submodule "static/git-deploy"]
+	path = static/git-deploy
+	url = git@github.com:choicky/git-deploy.git
