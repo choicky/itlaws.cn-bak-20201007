@@ -12,9 +12,9 @@ web_root="/var/www/itlaws.cn/public"
 
 # 更新 repo 并生成新的静态化文件
 cd $repo_path
-git reset --hard origin/master
+# git reset --hard origin/master
 git clean -f
 git pull --recurse-submodules
-git checkout master
+# git checkout master
 chown -R $USER:$USERGROUP $repo_path
 hugo -s $repo_path -d $web_root
