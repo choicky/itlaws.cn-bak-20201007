@@ -17,6 +17,4 @@ git clean -f
 git pull --recurse-submodules
 git checkout master
 chown -R $USER:$USERGROUP $repo_path
-hugo -d $web_root
-
-# for test
+hugo -s $repo_path -d $web_root
