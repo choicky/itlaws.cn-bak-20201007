@@ -1,6 +1,6 @@
 [
   {
-    "id": "deploy-itlaws.cn",
+    "id": "deploy",
     "execute-command": "/var/www/itlaws.cn/webhook/deploy.sh",
     "command-working-directory": "/var/www/itlaws.cn"
   }
