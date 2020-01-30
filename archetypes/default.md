@@ -6,7 +6,7 @@ lastmod: {{ .Date }}
 tags: [
     "",
     "",
-    "2019年",
+    "2020年",
 ]
 categories: [
     "IT",
