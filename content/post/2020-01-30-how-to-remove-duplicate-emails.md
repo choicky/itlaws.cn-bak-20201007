@@ -1,5 +1,5 @@
 ---
-title: "如何删除重复的邮件"
+title: "如何自动删除重复的邮件"
 slug: "How-to-Remove-Duplicate-Emails"
 date:    2020-01-30T09:48:24+08:00
 lastmod: 2020-01-30T09:48:24+08:00
