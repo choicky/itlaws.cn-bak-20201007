@@ -26,7 +26,7 @@ categories: [
 
 ### 重复导入的邮件
 
-有一段时间，我曾经将我的域名`zhoucaiqi.com`托管到Google的企业邮局并给自己开设了`email@zhoucaiqi.com`，并将我积累了多年的 `zhoucaiqi@gmail.com`的邮件导入到`email@zhoucaiqi.com`。但是，Google企业邮局有各种各样的问题，导致我被迫回归 `zhoucaiqi@gmail.com`，导来导去之后，就出现了很多重复的邮件。<!--more-->
+有一段时间，我曾经将我的域名 `zhoucaiqi.com` 托管到Google的企业邮局并给自己开设了邮箱 `email@zhoucaiqi.com`，并将我积累了多年的  `zhoucaiqi@gmail.com` 的邮件导入到`email@zhoucaiqi.com`。但是，Google企业邮局有各种各样的问题，导致我被迫回归  `zhoucaiqi@gmail.com` 。因为网络问题、服务器限制问题、担心导入不全的问题，我多导入了一两次，导来导去之后，就出现了很多重复的邮件。<!--more-->
 
 ### 需求与困难
 
@@ -47,6 +47,8 @@ categories: [
 我觉得默认的参数就OK了。
 
 我先在某个子文件夹做了测试，这子文件夹有5万封邮件，在文件夹鼠标右键选择`Remove Duplicate Messages`之后，两三分钟就筛选完了，筛选出来5千封重复的邮件。看筛选结果，是正确的。
+
+### 结果
 
 我的Gmail总共有14.1万封邮件，我根文件夹选择`Remove Duplicate Messages`之后，大概十分钟后，过滤出7万封重复的邮件：
 
