@@ -92,9 +92,9 @@ nginx的重写规则就简单多了：
 
 
 
-#### caddy 的重写规则
+#### caddy v1.0 系列的重写规则
 
-caddy 是更年轻的web服务器。我使用caddy的时候，深圳房价已经五六万一平方米了。
+caddy 是更年轻的web服务器。我使用caddy v1系列的时候，深圳房价已经五六万一平方米了。
 
 caddy 的优点在于，能够自动申请ssl证书，从而使网站能启动https。
 
@@ -105,3 +105,16 @@ thinkphp在caddy的重写规则是：
         to {path} {path}/ /index.php?s={uri}
     }
 ```
+
+
+
+#### caddy v2.0 系列的重写规则
+
+caddy v2 系列的语法规则与 v1 系列有很大的差异。是更年轻的web服务器。我使用caddy v2系列的时候，深圳房价已经七八万一平方米了；昔日鸟不拉屎的西乡、福永、沙井成为了网红区域，房价代表了深圳的最高价。世事无常啊。
+
+thinkphp在caddy的重写规则是：
+
+```nginx
+try_files {path} {path}/ /index.php?s={uri}
+```
+
