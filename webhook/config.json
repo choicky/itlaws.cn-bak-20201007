@@ -1,7 +1,7 @@
 [
   {
     "id": "itlaws.cn",
-    "execute-command": "/bin/bash /var/www/itlaws.cn/webhook/deploy.sh",
+    "execute-command": "/var/www/itlaws.cn/webhook/deploy.sh",
     "command-working-directory": "/var/www/itlaws.cn"
   }
 ]
