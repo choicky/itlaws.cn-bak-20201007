@@ -1,5 +1,5 @@
 baseURL = "https://itlaws.cn"
-title = "IT & Laws"
+title = "IT & Laws test"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
