@@ -3,4 +3,4 @@
 	url = git@github.com:choicky/hugo-theme-jane.git
 [submodule "themes/LoveIt"]
 	path = themes/LoveIt
-	url = git@github.com:choicky/LoveIt.git
+	url = git@gitee.com:choicky/LoveIt.git
