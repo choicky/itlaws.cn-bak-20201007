@@ -1088,9 +1088,9 @@ enableEmoji = true
 # Author config
 # 作者配置
 [author]
-  name = "xxxx"
-  email = ""
-  link = ""
+  name = "choicky"
+  email = "zhoucaiqi@gmail.com"
+  link = "https://zhoucaiqi.com"
 
 # Sitemap config
 # 网站地图配置
