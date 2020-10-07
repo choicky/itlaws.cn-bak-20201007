@@ -108,20 +108,6 @@ Hugo 附带了一组预定义的 shortcodes, 它们实现了一些非常常见�
 </section>
 {{< /highlight >}}
 
-## 4 instagram
-
-[`instagram` 的文档](https://gohugo.io/content-management/shortcodes#instagram)
-
-一个 `instagram` 示例:
-
-```markdown
-{{</* instagram BWNjjyYFxVx hidecaption */>}}
-```
-
-呈现的输出效果如下:
-
-{{< instagram BWNjjyYFxVx hidecaption >}}
-
 ## 5 param
 
 [`param` 的文档](https://gohugo.io/content-management/shortcodes#param)
